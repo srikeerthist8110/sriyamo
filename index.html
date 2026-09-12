@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRIYAMO — Everyday Kurtis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement"><span>✨ 70% OFF selected styles</span><span>Use code <b>SRIYAMO70</b></span><span>Free shipping on orders above ₹799</span></div>
+  <header class="site-header">
+    <a href="#home" class="brand"><span>SRIYAMO</span><small>WEAR YOUR STORY</small></a>
+    <nav>
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#new">New Arrivals</a><a href="#shop">Dresses</a><a href="#shop">Kurtis</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button aria-label="Search" onclick="openSearch()">⌕</button>
+      <button aria-label="Wishlist" onclick="showToast('Wishlist is ready ❤️')">♡</button>
+      <button aria-label="Account" onclick="showToast('Account feature coming next')">◯</button>
+      <button aria-label="Cart" class="cart-btn" onclick="openCart()">🛍 <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ETHNIC WEAR FOR THE GIRL YOU ARE BECOMING</p>
+        <h1>Everyday<br><em>Kurtis, on Repeat</em></h1>
+        <p class="hero-text">Soft fabrics. Breezy fits. Made for your everyday magic.</p>
+        <a class="btn" href="#shop">Shop Now <span>→</span></a>
+        <div class="loved">♡ Loved by 10K+ happy girls</div>
+      </div>
+      <div class="hero-art">
+        <div class="sale-sticker">70%<br><small>OFF</small></div>
+        <div class="hero-placeholder"><div><b>SRIYAMO</b><span>Everyday Kurtis<br>Endless Stories ♡</span></div></div>
+        <div class="hero-script">Same<br>Girls<br>New<br>Stories ♡</div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div>🚚 <span><b>Free Shipping</b><small>on orders above ₹799</small></span></div>
+      <div>🔒 <span><b>Secure Payments</b><small>100% safe & secure</small></span></div>
+      <div>↩️ <span><b>Easy Returns</b><small>7-day hassle free</small></span></div>
+      <div>💌 <span><b>Support 24/7</b><small>We’re always here</small></span></div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-head"><div><p class="eyebrow">FIND YOUR FAVOURITE</p><h2>Shop By Category</h2></div><a href="#new">see all →</a></div>
+      <div class="category-grid">
+        <button class="category"><div class="cat-visual cat-1">🌸</div><h3>Kurtis</h3><p>Everyday favourites</p></button>
+        <button class="category"><div class="cat-visual cat-2">👗</div><h3>Dresses</h3><p>For every mood</p></button>
+        <button class="category"><div class="cat-visual cat-3">✨</div><h3>Ethnic Wear</h3><p>Timeless & elegant</p></button>
+        <button class="category"><div class="cat-visual cat-4">₹</div><h3>Under ₹499</h3><p>Style on a budget</p></button>
+      </div>
+    </section>
+
+    <section class="section" id="new">
+      <div class="section-head"><div><p class="eyebrow">JUST DROPPED</p><h2>New Arrivals ♡</h2></div><a href="#shop">View All →</a></div>
+      <div class="product-layout">
+        <div class="products" id="productGrid"></div>
+        <aside class="promo-card"><p>Fits<br>That Feel<br><em>Like You</em></p><button class="btn light" onclick="showToast('More styles are being added soon ✨')">Explore Now →</button></aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div><p class="eyebrow">LOVED BY YOU</p><h2>Best Sellers</h2><p>Your favourites, always ♡</p></div><a href="#shop">View All →</a></div>
+      <div class="products" id="bestGrid"></div>
+    </section>
+
+    <section class="offer-banner">
+      <div><p class="eyebrow">LIMITED-TIME EDIT</p><h2>1 + 1 feels better together.</h2><p>Grab selected pairs with our special combo offers. Perfect for college days, chai dates & everything in between.</p><button class="btn" onclick="showToast('Combo offers are active on selected products')">Shop the offer →</button></div>
+      <div class="offer-card">1 + 1<br><strong>COMBO<br>OFFERS</strong><span>♡</span></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-collage"><div class="polaroid one">S<br>Y<br>M</div><div class="polaroid two">♡</div><div class="note">Three girls<br>One dream<br><b>SRIYAMO</b> ♡</div></div>
+      <div class="about-copy"><p class="eyebrow">OUR STORY</p><h2>More Than Just Outfits</h2><h3>A Story by Three Friends</h3><p>SRIYAMO is a dream turned real by three friends who believe fashion is a form of self-expression. We create kurtis and ethnic wear that blend comfort, elegance and everyday style, for girls like you.</p><button class="btn" onclick="showToast('Our full story page is coming soon')">Our Story →</button></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div><h3>SRIYAMO</h3><p>Wear your story.</p></div>
+    <div><b>Quick Links</b><a href="#shop">Shop</a><a href="#new">New Arrivals</a><a href="#about">About</a></div>
+    <div><b>Payments</b><p>UPI · COD</p><small>COD orders: 50% advance by UPI<br>and 50% on delivery</small></div>
+    <div><b>Stay in the loop ♡</b><div class="newsletter"><input placeholder="Your email"><button onclick="showToast('Thanks for joining SRIYAMO ♡')">→</button></div></div>
+  </footer>
+
+  <div class="modal" id="searchModal" aria-hidden="true"><div class="modal-card"><button class="close" onclick="closeSearch()">×</button><h3>Search SRIYAMO</h3><input id="searchInput" placeholder="Try “pink kurti”..."><button class="btn" onclick="doSearch()">Search →</button><p id="searchResult"></p></div></div>
+  <div class="modal" id="cartModal" aria-hidden="true"><div class="modal-card"><button class="close" onclick="closeCart()">×</button><h3>Your Cart</h3><div id="cartItems"></div><div class="cart-total">Total <b id="cartTotal">₹0</b></div><button class="btn" onclick="checkout()">Proceed to Checkout →</button></div></div>
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
